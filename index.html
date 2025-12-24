@@ -12,8 +12,8 @@
 <div id ="header">
     <div class="cointainer">
         <nav>
-            <img src="images2/logo4.png.jpeg" class="logo">
-            <ul id="sidemenue">
+            <img src="images2/logo2.png.jpeg" class="logo">
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -112,9 +112,9 @@ With a blend of creative design skills and technical programming expertise, I br
             </div>
             
             <div class="work">
-                <img src="images2/work-2.png">
+                <img src="images2/Work-2.png.jpeg">
                 <div class="layer">
-                    <h3>Music app</h3>
+                    <h3>Weather app</h3>
                     <p>The app contents you the talented people around the word. Download it for play fa-app-store-ios</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -134,7 +134,7 @@ With a blend of creative design skills and technical programming expertise, I br
 <a href="#" class="btn">See more</a>
     </div>
 </div>
-
+<!-- ---------contact------ -->
 
 <div id="contact">
     <div class="cointainer">
@@ -144,10 +144,10 @@ With a blend of creative design skills and technical programming expertise, I br
                 <p><i class="fa-solid fa-paper-plane"></i>aajayanandakumar@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>6374732321</p>
                 <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/___.a.ajay.___/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="www.linkedin.com/in/ajay32321"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-x"></i></a>
+                    <a href="https://github.com/ajayanandakumar-ux"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="images2/my-cv(2).pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -194,7 +194,7 @@ document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
 <script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbzpXHS48VQvpdVQ6ocITsTReERFcNXGhmboA36UQ6v7oGfeKh-9TsmO0UGJix5e1HCd9Q/exec>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwldy2qgSqldj_qFKJeOS2JAzCma-u5w_DOPWIdW34mxgaCA15EM6Mw_67Tx-p0FsYm/exec'
   const form = document.forms['submit-to-google-sheet']
   const mgs = document.getElementById("msg")
 
@@ -203,8 +203,9 @@ document.getElementById(tabname).classList.add("active-tab");
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML= "Message sent successfully"
-        setTimeout(fuunction()
-        ,5000)
+        setTimeout(function(){
+        msg.innerHTML = ""
+        },5000)
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
