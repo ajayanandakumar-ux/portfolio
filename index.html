@@ -1,215 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset-"UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Personal Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Ajay | Full Stack Engineer & AI Developer Portfolio</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Portfolio of A Ajay - Full Stack Engineer, AI Executive Intern (Teknogrede), and MCA Scholar at Presidency University Bangalore. Experienced in React.js, Node.js, Express.js, Java, Python, Flutter, Django REST, AWS, and Google Gemini AI.">
+    <meta name="keywords" content="A Ajay, Ajay Anandakumar, Full Stack Engineer, AI Developer, React.js, Node.js, Java, Python, Flutter, Django REST, Teknogrede, Smart India Hackathon, Presidency University, Bangalore, AWS Certified, OCI Certified">
+    <meta name="author" content="A Ajay">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="A Ajay | Full Stack Engineer & AI Developer">
+    <meta property="og:description" content="Explore A Ajay's engineering portfolio showcasing full-stack web applications, cross-platform mobile apps, cloud deployments, and AI workflow automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/ajayanadakumar-ux">
+    
+    <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3b52d1d209.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id ="header">
-    <div class="cointainer">
-        <nav>
-            <img src="images2/logo2.png.jpeg" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenue()"></i>
-        </nav>
-        <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi I'am <span>Ajay</span><br>from Banglore</h1>
-        </div>
-    </div>
-</div>
-<div id="about">
-    <div class="cointainer">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images2/user3.png.jpeg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a UI/UX Web Designer and an Entry-Level Software Engineer with a strong foundation in Java, Python, and modern Web Technologies. My passion lies in creating intuitive, visually appealing, and user-friendly digital experiences while also developing efficient and scalable software solutions.
-With a blend of creative design skills and technical programming expertise, I bring a unique perspective to problem-solving, whether it’s crafting seamless user interfaces or building robust backend systems. I’m eager to contribute to dynamic teams, continuously learn new tools and technologies, and grow into a versatile professional in the IT industry.</p>
 
-<div class="tab-titles">
-    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
-     <p class="tab-links" onclick="opentab('experience')">experience</p>
-      <p class="tab-links" onclick="opentab('education')">education</p>
-    </div>
-    <div class="tab-contents active-tab" id="skills">
-        <ul>
-            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-            <li><span>Web Development</span><br>Designing Web App Developer</li>
-            <li><span>App Development</span><br>Building Android/ios apps</li>
-        </ul>
-    </div>
-     <div class="tab-contents" id="experience">
-        <ul>
-            <li><span>2025 - Current</span><br>UI/UX learner</li>
-            <li><span>2023 - Attened</span><br>Web Application workshopes</li>
-            <li><span>2022 - Attened</span><br>Google wednior</li>
-        </ul>
-    </div>
-     <div class="tab-contents" id="education">
-        <ul>
-            <li><span>2021</span><br>Completed my Schoolings in S.V.G.V School Karamadai</li>
-            <li><span>2024</span><br> BSC csa from Sri Krishna arts and science collage Coimbatore</li>
-            <li><span>2026</span><br> MCA from Presidency University Banglore</li>
-        </ul>
-    </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Cyber Matrix Canvas Background -->
+    <canvas id="cyber-canvas"></canvas>
 
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo-text">
+                    Ajay<span class="gradient-text">.dev</span>
+                    <span class="logo-badge">FULL-STACK & AI</span>
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#certifications">Certs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
 
-<div id="services">
-<div class="cointainer">
-    <h1 class="sub-title">My services</h1>
-    <div class="services-list">
-<div>
-    <i class="fa-solid fa-code"></i>
-    <h2>Web Design</h2>
-    <p>Lorem ipum dior sit amet, consectetur adipiscing elit.Sed null nibh, tincidunt sti amet sapien quis.</p>
-    <a href="#">Learn more</a>
-</div>
-<div>
-    <i class="fa-solid fa-crop-simple"></i>
-    <h2>UI/UX Design</h2>
-    <p>Lorem ipum dior sit amet, consectetur adipiscing elit.Sed null nibh, tincidunt sti amet sapien quis.</p>
-    <a href="#">Learn more</a>
-</div>
-<div>
-    <i class="fa-brands fa-app-store-ios"></i>
-    <h2>App Design</h2>
-    <p>Lorem ipum dior sit amet, consectetur adipiscing elit.Sed null nibh, tincidunt sti amet sapien quis.</p>
-    <a href="#">Learn more</a>
-</div>
-    </div>
-</div>
-</div>
+            <!-- Hero Section Grid -->
+            <div class="hero-wrapper">
+                <div class="header-text">
+                    <div class="sys-status-pill">
+                        <span class="status-dot"></span>
+                        <span>SYS_STATUS: ONLINE | AI ENGINE ACTIVE</span>
+                    </div>
+                    <p class="greeting">Hello, I am</p>
+                    <h1><span class="gradient-text">A Ajay</span></h1>
+                    <p class="hero-role">Creative <span id="typed-text" class="gradient-text-pink"></span><span class="typing-cursor"></span></p>
+                    <p class="hero-bio-short">
+                        Full Stack Engineer with hands-on experience building responsive web & mobile apps using <strong>React.js, Node.js, Express.js, REST APIs, Java</strong>, and <strong>Flutter</strong>. 6-Month AI Intern at <strong>Teknogrede</strong> specializing in Python-based workflow automation and LLM API integrations.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn"><i class="fa-solid fa-rocket"></i> View Projects</a>
+                        <a href="#contact" class="btn btn2"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a>
+                        <a href="images2/my-cv(2).pdf" download class="btn" style="border-color: rgba(255,255,255,0.2);"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                    </div>
+                </div>
 
-<div id="portfolio">
-    <div class="cointainer">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images2/work-1.png">
-                <div class="layer">
-                    <h3>Social Media app</h3>
-                    <p>The app contents you the talented people around the word. Download it for play fa-app-store-ios</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <!-- Recruiter Interactive Terminal CLI Widget -->
+                <div class="terminal-window" id="terminal-window">
+                    <div class="terminal-header">
+                        <div class="term-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="term-title">ajay@cyber-deck:~$ (Recruiter Shell v2.5)</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output" id="terminal-output">
+                            <div class="terminal-line">
+                                <span class="term-cyan">Welcome to Ajay's Cyber Command Shell!</span>
+                            </div>
+                            <div class="terminal-line">
+                                Type '<span class="term-green">help</span>' or click a command shortcut below to inspect profile telemetry.
+                            </div>
+                        </div>
+                        <div class="terminal-input-wrapper">
+                            <span class="term-prompt">ajay@cyber-deck:~$</span>
+                            <input type="text" id="terminal-input" placeholder="Type command (e.g. 'summary', 'skills', 'experience')..." autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="terminal-chips">
+                        <button class="term-chip" data-cmd="summary">summary</button>
+                        <button class="term-chip" data-cmd="skills">skills</button>
+                        <button class="term-chip" data-cmd="experience">experience</button>
+                        <button class="term-chip" data-cmd="projects">projects</button>
+                        <button class="term-chip" data-cmd="education">education</button>
+                        <button class="term-chip" data-cmd="contact">contact</button>
+                    </div>
                 </div>
             </div>
-            
-            <div class="work">
-                <img src="images2/Work-2.png.jpeg">
-                <div class="layer">
-                    <h3>Weather app</h3>
-                    <p>The app contents you the talented people around the word. Download it for play fa-app-store-ios</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            
-            <div class="work">
-                <img src="images2/work-3.png">
-                <div class="layer">
-                    <h3>Online banquate booking app</h3>
-                    <p>The app contents you the talented people around the word. Download it for play fa-app-store-ios</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>SCROLL DOWN</span>
+            </a>
         </div>
-    </div>
-</div>
-<a href="#" class="btn">See more</a>
-    </div>
-</div>
-<!-- ---------contact------ -->
+    </header>
 
-<div id="contact">
-    <div class="cointainer">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>aajayanandakumar@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>6374732321</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/___.a.ajay.___/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="www.linkedin.com/in/ajay32321"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/ajayanandakumar-ux"><i class="fa-brands fa-github"></i></a>
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">About Me</h2>
+                <div class="about-row">
+                    <div class="about-col-1">
+                        <div class="about-img-card">
+                            <img src="images2/user3.png.jpeg" alt="A Ajay Profile Image">
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <p class="about-bio">
+                            I am a detail-oriented <strong>Full Stack Engineer</strong> and <strong>AI Developer</strong> currently pursuing my <strong>Master of Computer Applications (MCA)</strong> with a focus on Full-Stack Development & Cloud Computing at <strong>Presidency University, Bangalore</strong>.
+                            <br><br>
+                            I have hands-on experience building end-to-end web & mobile applications using <strong>React.js, Node.js, Express.js, Java, Python, Flutter, Django REST</strong>, and relational/NoSQL databases (<strong>PostgreSQL, MongoDB, MySQL</strong>). Having completed a 6-month AI internship at <strong>Teknogrede</strong> building workflow automation and LLM API integrations in a live production environment, I thrive on solving complex real-world challenges in Agile cross-functional engineering teams.
+                        </p>
+                        
+                        <!-- Core Highlights Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                <h3>6 Months AI Intern</h3>
+                                <p>Teknogrede Production Experience</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                                <h3>Full Stack & Mobile</h3>
+                                <p>React.js, Node.js & Flutter Apps</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <h3>SIH Hackathon</h3>
+                                <p>Smart India Hackathon Finalist</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+                                <h3>AWS & OCI Certified</h3>
+                                <p>Cloud & Data Analytics Certs</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="images2/my-cv(2).pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">submit</button>
-                </form>
-                <span id="msg"></span>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">Technical Skills</h2>
+                <p class="section-desc">Extensive toolkit across client-side interfaces, server-side APIs, database systems, cloud infrastructure, and AI engineering.</p>
+
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-code"></i> Frontend Engineering</h4>
+                        <div class="skill-badges">
+                            <span class="badge">React.js</span>
+                            <span class="badge">JavaScript (ES6+)</span>
+                            <span class="badge">TypeScript</span>
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">Component Architecture</span>
+                            <span class="badge">State Management</span>
+                            <span class="badge">Responsive UI Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Languages -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-server"></i> Backend & Languages</h4>
+                        <div class="skill-badges">
+                            <span class="badge">Java (Core/OOP)</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express.js</span>
+                            <span class="badge">Django REST Framework</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Dart</span>
+                            <span class="badge">REST API Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-database"></i> Databases & Storage</h4>
+                        <div class="skill-badges">
+                            <span class="badge">PostgreSQL</span>
+                            <span class="badge">MongoDB</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Firebase Auth</span>
+                            <span class="badge">Cloud Firestore</span>
+                            <span class="badge">Relational & NoSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h4>
+                        <div class="skill-badges">
+                            <span class="badge">AWS (Cloud Practitioner)</span>
+                            <span class="badge">Oracle Cloud (OCI 2025)</span>
+                            <span class="badge">Docker (Basic)</span>
+                            <span class="badge">Git & GitHub</span>
+                            <span class="badge">Jenkins</span>
+                            <span class="badge">GitHub Actions</span>
+                            <span class="badge">Agile / Scrum / Jira</span>
+                        </div>
+                    </div>
+
+                    <!-- AI-Assisted Development -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-brain"></i> AI & Automation</h4>
+                        <div class="skill-badges">
+                            <span class="badge">LLM API (Google Gemini)</span>
+                            <span class="badge">GitHub Copilot AI Tools</span>
+                            <span class="badge">Python Automation Scripting</span>
+                            <span class="badge">ML Workflows</span>
+                            <span class="badge">GenAI Analytics</span>
+                        </div>
+                    </div>
+
+                    <!-- Practices & Methodology -->
+                    <div class="skill-card">
+                        <h4><i class="fa-solid fa-list-check"></i> Software Engineering Practices</h4>
+                        <div class="skill-badges">
+                            <span class="badge">Unit Testing Fundamentals</span>
+                            <span class="badge">Code Reviews</span>
+                            <span class="badge">Sprint Planning</span>
+                            <span class="badge">Daily Standups</span>
+                            <span class="badge">Cross-Browser Debugging</span>
+                            <span class="badge">SDLC Methodologies</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Experience & Education Timeline -->
+        <section id="experience" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">Experience & Journey</h2>
+                <p class="section-desc">Hands-on industry internship experience combined with rigorous computer science academic training.</p>
+
+                <div class="journey-grid">
+                    <!-- Professional Experience -->
+                    <div class="journey-col">
+                        <h3 class="journey-col-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+                        <div class="timeline">
+                            
+                            <div class="timeline-item highlight">
+                                <div class="timeline-date">6 MONTHS INTERNSHIP | BANGALORE, INDIA</div>
+                                <div class="timeline-title">AI Executive Intern</div>
+                                <div class="timeline-org">Teknogrede</div>
+                                <ul class="timeline-bullets">
+                                    <li>Built and configured Python-based AI tools and scripts to automate business workflows, applying ML concepts and REST API integrations in a live production setting.</li>
+                                    <li>Collaborated cross-functionally with engineers to gather requirements, debug issues, and ship AI-powered features aligned with business goals — following Agile/SDLC practices.</li>
+                                    <li>Documented processes and workflows to support knowledge sharing and maintainable code practices across the team.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Academic Training -->
+                    <div class="journey-col">
+                        <h3 class="journey-col-title"><i class="fa-solid fa-graduation-cap"></i> Academic Education</h3>
+                        <div class="timeline">
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 – 2026 | BANGALORE, INDIA</div>
+                                <div class="timeline-title">Master of Computer Applications (MCA)</div>
+                                <div class="timeline-org">Presidency University, Bangalore</div>
+                                <ul class="timeline-bullets">
+                                    <li><strong>Focus:</strong> Full-Stack & Cloud Computing.</li>
+                                    <li><strong>Relevant Coursework:</strong> Java Programming (OOP, core Java project work), Python & Application Development, Software Engineering (SDLC & Agile), Cloud Computing, DevOps & CI/CD, DBMS.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-date">2021 – 2024 | COIMBATORE, INDIA</div>
+                                <div class="timeline-title">B.Sc. Computer Science & Applications</div>
+                                <div class="timeline-org">Sri Krishna Arts & Science College</div>
+                                <ul class="timeline-bullets">
+                                    <li><strong>Focus:</strong> Core Computer Science Fundamentals.</li>
+                                    <li><strong>Relevant Coursework:</strong> Database Systems, Data Structures, Algorithm Design, OOP, Web Technologies.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (My Work) -->
+        <section id="portfolio" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">Featured Projects</h2>
+                <p class="section-desc">Production-grade web and cross-platform mobile software engineering projects.</p>
+
+                <!-- Filter Controls -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="ai">AI & Cloud</button>
+                </div>
+
+                <div class="work-grid">
+                    
+                    <!-- Project 1: Online Banquet Booking System -->
+                    <div class="work-card" data-category="fullstack">
+                        <div class="work-img-box">
+                            <img src="images2/banquet.png" alt="Online Banquet Booking System Interface">
+                        </div>
+                        <div class="work-content">
+                            <h3>Online Banquet Booking System</h3>
+                            <p>Built a full-stack web application end-to-end with a React.js front end (component-based architecture, state management), a Node.js/Express.js REST API backend, and MongoDB, including an admin dashboard. Implemented authentication and CRUD flows consuming REST APIs across layers.</p>
+                            <div class="layer-tags">
+                                <span class="tag-pill">React.js</span>
+                                <span class="tag-pill">Node.js</span>
+                                <span class="tag-pill">Express.js</span>
+                                <span class="tag-pill">MongoDB</span>
+                                <span class="tag-pill">Admin Dashboard</span>
+                            </div>
+                            <div class="work-link-wrapper">
+                                <a href="https://github.com/ajayanandakumar-ux" target="_blank" rel="noopener">Codebase Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: NATPAC Travel Survey App -->
+                    <div class="work-card" data-category="mobile ai">
+                        <div class="work-img-box">
+                            <img src="images2/natpac.png" alt="NATPAC Travel Survey Application Preview">
+                        </div>
+                        <div class="work-content">
+                            <h3>NATPAC Travel Survey App</h3>
+                            <p>Built a cross-platform Flutter front end backed by a Django REST Framework API for a government GPS trip-survey system selected for Smart India Hackathon. Integrated Google Gemini 2.5 Flash API, Firebase (Auth, Firestore), and PostgreSQL for real-time cloud sync and session management.</p>
+                            <div class="layer-tags">
+                                <span class="tag-pill">Smart India Hackathon</span>
+                                <span class="tag-pill">Flutter</span>
+                                <span class="tag-pill">Django REST</span>
+                                <span class="tag-pill">PostgreSQL</span>
+                                <span class="tag-pill">Firebase</span>
+                                <span class="tag-pill">Gemini AI</span>
+                            </div>
+                            <div class="work-link-wrapper">
+                                <a href="https://github.com/ajayanandakumar-ux" target="_blank" rel="noopener">Codebase Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Peace Pal -->
+                    <div class="work-card" data-category="mobile">
+                        <div class="work-img-box">
+                            <img src="images2/peacepal_wellness.png" alt="Peace Pal Stress Management Interface Preview">
+                        </div>
+                        <div class="work-content">
+                            <h3>Peace Pal — Stress Management App</h3>
+                            <p>Designed and built a cross-platform mobile app end-to-end, integrating Firebase and debugging sync issues for high reliability. Features guided breathing modules, mood tracking, and real-time backend state synchronization.</p>
+                            <div class="layer-tags">
+                                <span class="tag-pill">Flutter</span>
+                                <span class="tag-pill">Dart</span>
+                                <span class="tag-pill">Firebase Auth</span>
+                                <span class="tag-pill">Firestore</span>
+                                <span class="tag-pill">REST API</span>
+                            </div>
+                            <div class="work-link-wrapper">
+                                <a href="https://github.com/ajayanandakumar-ux" target="_blank" rel="noopener">Codebase Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Languages Section -->
+        <section id="certifications" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">Certifications & Achievements</h2>
+                
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+                        <div class="cert-details">
+                            <h3>AWS Cloud Practitioner Essentials</h3>
+                            <p class="cert-org">AWS Training & Certification</p>
+                            <p class="cert-desc">Validated cloud architecture, core AWS services, security compliance, deployment paradigms, and pricing structures.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="cert-details">
+                            <h3>Oracle Cloud Infrastructure 2025 Foundations</h3>
+                            <p class="cert-org">OCI Associate Certification</p>
+                            <p class="cert-desc">Certified in fundamentals of OCI cloud instances, virtual cloud networks (VCN), IAM security, and computing nodes.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="cert-details">
+                            <h3>GenAI Powered Data Analytics</h3>
+                            <p class="cert-org">TATA Forage Job Simulation</p>
+                            <p class="cert-desc">Practiced data analytics workflows, insight storytelling, prompt engineering with Large Language Models (LLM), and data strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="cert-details">
+                            <h3>Python Developer & Machine Learning</h3>
+                            <p class="cert-org">Prodigy InfoTech & ML Workshop</p>
+                            <p class="cert-desc">Hands-on application of Object Oriented Python, automated scripting, data parsing, and predictive model validation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages Spoken Bar -->
+                <div class="languages-box">
+                    <div class="lang-title">
+                        <i class="fa-solid fa-language" style="color: var(--cyber-cyan); font-size: 24px;"></i>
+                        <span>Languages Spoken:</span>
+                    </div>
+                    <div class="lang-tags">
+                        <span class="lang-pill">English (Professional)</span>
+                        <span class="lang-pill">Tamil (Native)</span>
+                        <span class="lang-pill">Hindi (Proficient)</span>
+                        <span class="lang-pill">Kannada (Conversational)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="container">
+                <h2 class="sub-title">Contact Me</h2>
+                <div class="contact-row">
+                    <div class="contact-left">
+                        <p class="contact-pitch">
+                            Feel free to reach out for software engineering roles, full-stack developer opportunities, or technical collaborations. I respond promptly within 24 hours.
+                        </p>
+
+                        <div class="contact-info-list">
+                            <a href="mailto:aajayanadakumar@gmail.com" class="contact-info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>aajayanadakumar@gmail.com</span>
+                            </a>
+                            <a href="tel:+916374732321" class="contact-info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 637-473-2321</span>
+                            </a>
+                            <div class="contact-info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Bangalore, Karnataka, India</span>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/ajay8969" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/ajayanadakumar-ux" target="_blank" rel="noopener" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:aajayanadakumar@gmail.com" aria-label="Email Contact"><i class="fa-solid fa-paper-plane"></i></a>
+                        </div>
+
+                        <a href="images2/my-cv(2).pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download Complete CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name" class="sr-only">Your Name</label>
+                                <input type="text" id="form-name" name="Name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="sr-only">Your Email</label>
+                                <input type="email" id="form-email" name="Email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="sr-only">Your Message</label>
+                                <textarea id="form-message" name="Message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn2" style="width: 100%;"><i class="fa-solid fa-paper-plane"></i> Transmit Message</button>
+                            <div id="msg" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright © A Ajay. Engineered with <i class="fa-solid fa-heart"></i>, Cyber Tech &amp; Full-Stack Architecture in Bengaluru, India</p>
         </div>
-    </div>
-    <div class="copyright">
-        <p>copyright © Ajay. Made with<i class="fa-solid fa-heart-pulse"></i>by me</p>
-    </div>
-</div>
+    </footer>
 
-<script>
-
- var tablinks = document.getElementsByClassName("tab-linls");
- var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-event.currentTarget.classList.add("active-link");
-document.getElementById(tabname).classList.add("active-tab");
-}
-
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwldy2qgSqldj_qFKJeOS2JAzCma-u5w_DOPWIdW34mxgaCA15EM6Mw_67Tx-p0FsYm/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const mgs = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML= "Message sent successfully"
-        setTimeout(function(){
-        msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    <!-- Interactive Logic Script -->
+    <script src="script.js"></script>
 </body>
 </html>
